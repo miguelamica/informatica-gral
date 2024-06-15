@@ -1,0 +1,7 @@
+dec=int(input("Ingrese un numero en decimal (máximo 5 cifras): "))
+u=(dec%8)
+d=(dec//8%8)
+c=(dec//64%8)
+um=(dec//512%8)
+dm=(dec//4096%8)
+print("Numero en octal: {}{}{}{}{}".format(dm,um,c,d,u))
